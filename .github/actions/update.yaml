@@ -1,0 +1,22 @@
+name: Node.js CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '21.x'
+      - run: node dns.mjs
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add sys
+          git commit -m "generated"
+          git push

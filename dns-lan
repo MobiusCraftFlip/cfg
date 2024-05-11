@@ -4,6 +4,11 @@
   
 192.168.11.34 MO-002S.int.mobius.ovh
 
-
 192.168.11.44 MO-001LP.int.mobius.ovh
 192.168.11.42 MO-002LP.int.mobius.ovh
+
+# mongoDB
+
+MO-001S.int.mobius.ovh MONGO1.int.mobius.ovh
+MO-002LP.int.mobius.ovh MONGO2.int.mobius.ovh
+MO-002N.int.mobius.ovh BUCKET.int.mobius.ovh
