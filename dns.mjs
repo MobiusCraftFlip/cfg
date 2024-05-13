@@ -16,13 +16,13 @@ for (let line of lines) {
     console.log(destination, hosts)
 
     for (let host of hosts) {
-        addresses[host] = destination
+        addresses[host.toLowerCase()] = destination.toLowerCase()
     }
 }
 
 function checkAddresses() {
     for (let [host, dest] of Object.entries(addresses)) {
-        if (addresses[dest]) {
+        if (addresses[dest.toLowerCase()]) {
             return true
         }
     }
@@ -32,13 +32,13 @@ function checkAddresses() {
 
 while (checkAddresses()) {
     for (let [host, dest] of Object.entries(addresses)) {
-        if (addresses[dest]) {
-            addresses[host] = addresses[dest]
+        if (addresses[dest.toLowerCase()]) {
+            addresses[host.toLowerCase()] = addresses[dest.toLowerCase()]
         }
     }
 }
 
-const output = Object.entries(addresses).map((v) => v[0] + " " + v[1]).join("\n")
+const output = Object.entries(addresses).map((v) => v[1] + " " + v[0]).join("\n")
 
 console.log(output)
 
