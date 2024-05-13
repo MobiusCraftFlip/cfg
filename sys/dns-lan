@@ -1,8 +1,8 @@
-MO-002N.int.mobius.ovh 192.168.11.34
-MO-001S.int.mobius.ovh 192.168.11.40
-MO-002S.int.mobius.ovh 192.168.11.34
-MO-001LP.int.mobius.ovh 192.168.11.44
-MO-002LP.int.mobius.ovh 192.168.11.42
-MONGO1.int.mobius.ovh 192.168.11.40
-MONGO2.int.mobius.ovh 192.168.11.42
-BUCKET.int.mobius.ovh 192.168.11.34
+192.168.11.34 mo-002n.int.mobius.ovh
+192.168.11.40 mo-001s.int.mobius.ovh
+192.168.11.34 mo-002s.int.mobius.ovh
+192.168.11.44 mo-001lp.int.mobius.ovh
+192.168.11.42 mo-002lp.int.mobius.ovh
+192.168.11.40 mongo1.int.mobius.ovh
+192.168.11.42 mongo2.int.mobius.ovh
+192.168.11.34 bucket.int.mobius.ovh
